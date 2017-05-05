@@ -15,7 +15,7 @@ class CreateClaimsTable extends Migration
     {
         Schema::create('claims', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('claim_no',10)->unique();
+            $table->string('claim_no',10)->unique()->nullable();
             $table->date('claim_date');
             $table->decimal('total_claimed_amount', 10, 2)->nullable();
             $table->string('social_security_no',5)->nullable();

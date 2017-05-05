@@ -10,12 +10,7 @@
         <h2>MSD Claims</h2>
       </div>
       <div class="panel-body">
-        <div class="row">
-          <div class="col-lg-12">
-          <a class="btn btn-success pull-right" href="{{ route('claims.create') }}"> New Claim</a>
-          </div>
-          <br><br>
-        </div>
+        
 
         @if ($message = Session::get('success'))
         <div class="alert alert-success">
