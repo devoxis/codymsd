@@ -41,7 +41,7 @@
       </div>
       <div class="row">
         <div class="form-group {{ $errors->has('claim_date') ? 'has-error' : '' }} col-sm-4">
-          {!! Form::Label('claim_date', 'Date of Birth:') !!}
+          {!! Form::Label('claim_date', 'Claim Date:') !!}
            {!! Form::date('claim_date', \Carbon\Carbon::now(),array('class' => 'form-control')) !!}
           {!! $errors->first('claim_date', '<span class="help-block">:message</span>') !!}
         </div>
