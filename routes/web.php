@@ -21,7 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::resource('claims','ClaimController');
-Route::get('/claims/new/{id}', 'ClaimController@new')->name('claims.new');
+Route::get('/claims/new/{id}', 'ClaimController@newclaim')->name('claims.new');
 
 Route::resource('biographicals','BiographicalController');
 

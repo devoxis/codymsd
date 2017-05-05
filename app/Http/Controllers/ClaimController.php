@@ -34,7 +34,7 @@ class ClaimController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function new($id)
+    public function newclaim($id)
     {
         //
         $biographical = Biographical::find($id);
